@@ -33,7 +33,7 @@ window.onload = function(){
             cache : false,
             processData: false,
             beforeSend: function (xhr) {
-                xhr.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyMDEzMzgxNH0.H6DvWY09oRx_VekoRE0v9r4VrnycCAQcn5aJHjxkyhwWBzAtmo_LoLvSxgVIdIspdrdjPPtPEqAqVhvdcu9qmQ');
+                xhr.setRequestHeader('Authorization', 'Bearer ' + sessionStorage.getItem("token"))
             },
             success: (data) => {
                 console.log(data);

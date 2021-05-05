@@ -1,4 +1,4 @@
-const urlBase = "http://localhost:8080/login";
+const urlBase = "http://localhost:8080/api/auth";
 
 window.onload = function(){
 
